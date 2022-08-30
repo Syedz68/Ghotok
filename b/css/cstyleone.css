@@ -1,0 +1,180 @@
+* {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* text css above hero image*/
+.title {
+    font-size: 4.5rem;
+    color: #FFFFFF;
+}
+
+.forms {
+    padding: 50px 50px;
+    background: #ffffff;
+}
+
+.top {
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+label {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.field {
+    margin-top: 15px;
+}
+
+button[type="submit"] {
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    background: #2ed573;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background: #6ab04c;
+}
+.btn{
+    margin-top: 2%;
+    background-color:#2ed573; 
+    color: white;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.description {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.maintext {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* spacing on all sections */
+#about,
+#exp,
+#portfolio,
+#contact {
+    margin-top: 3rem;
+    padding-top: 4rem;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+/* social media icons styling */
+.social-icons {
+    padding-top: 30px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover,
+.fa-github:hover {
+    color: powderblue;
+}
+
+.fab {
+    color: #FFFFFF;
+}
+
+/* footer styling */
+#footer {
+    background-color: #222;
+    text-align: center;
+    height: 150px;
+}
+
+.contactContent button {
+    background-color: powderblue;
+    color: #222;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+}
+
+.box-img {
+    display: block;
+    width: 100%;
+}
+
+.imgoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imgoverlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.imgoverlay:hover {
+    opacity: 1;
+}
+
+.imgoverlay:hover>* {
+    transform: translateY(0);
+}
+
+.imgtitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.imgdes {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
