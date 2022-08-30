@@ -1,0 +1,66 @@
+body{
+	display: flex;
+	justify-content: center;
+	background-color: #E8CECE;
+}
+
+#two{
+	margin-top: 5%;
+	margin-left: 1%;
+
+}
+.main{
+  position: relative;
+}
+.main form{
+  width: 300px;
+  position: absolute;
+}
+#form1{
+  left: 510px;
+}
+.btn-box{
+  margin: 30% auto;
+  text-align: center;
+}
+input[type=text],input[type=date], input[type=password], input[type=email], input[type=file], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 18px;
+  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#25, #33, #50, #100 {
+  float: left;
+  width: 50%;
+  margin-top: 5px;
+}
+/*.eye{
+	position: absolute;
+}*/
+@media screen and (max-width: 600px) {
+  #25, #33, #50, #100, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }

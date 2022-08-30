@@ -1,0 +1,87 @@
+body{
+	background: #eee;
+}
+#title{
+	text-align: center;
+	font-size: 45px;
+	text-transform: uppercase;
+	margin-top: 2%;
+	color: #595555;
+}
+.wrapper{
+	width: 60%;
+	margin: 2% auto;
+}
+.single-price{
+	width: 33%;
+	background: #726F6F;
+	float: left;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transition: 0.9s;
+}
+.price{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px solid #da4357;
+	margin: 5% auto 0 auto;
+	text-align: center;
+}
+.deals{
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+.single-price h1{
+	font-size: 25px;
+	color: #fff;
+	line-height: 3;
+	text-transform: uppercase;
+}
+.price h2{
+	margin-top: 30%;
+	font-size: 38px;
+	color: #fff;
+}
+.deals h5{
+	font-size: 17px;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+}
+.deals h3{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #EE9F9F;
+	line-height: 1;
+}
+.single-price:hover{
+	background: #da4357;
+	color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 1.0);
+	transform: scale(1.1);
+	z-index: 1;
+	border-radius: 25px;
+}
+.single-price:hover .price{
+	border-color: #fff;
+}
+.single-price:hover h3{
+	color: #1C1A1A;
+}
+button{
+	padding: 10px 40px;
+    border-radius: 20%;
+    border: none;
+    background: #da4357;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.single-price:hover button{
+	background: #726F6F;
+}
