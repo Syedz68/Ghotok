@@ -1,0 +1,91 @@
+body{
+	width: 100%;
+}
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 50px;
+	background: #F2ADAD;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+#navbar li a:hover, #navbar li a.active{
+	color: #088178;
+}
+#navbar li a.active::after, #navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+
+}
+.pad{
+	padding: 40px 80px;
+}
+#people{
+	text-align: center;
+}
+#people .pep-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+#people .pep{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #cce7d0;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02) ;
+	margin: 15px 0;
+	transition: 0.2s ease;
+
+}
+#people .pep:hover{
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#people .pep img{
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+#people .pep .des{
+	text-align: start;
+	padding: 10px 0;
+}
+#people .pep .des h4{
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;	
+}
+#people .pep .des p{
+	font-size: 12px;
+}
