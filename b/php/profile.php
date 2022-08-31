@@ -48,7 +48,7 @@ if ($ID == true) {
 						<div class="bio" style="text-align: justify;"><?php echo $row['bio']; ?></div>
 						<div class="but-group pt-2">
 							<button>Upload Photo</button>
-							<button>Edit Profile</button>
+							<button> <a href="update.php"> Edit Profile </a> </button>
 						</div>
 					</div>
 					<div class="col-lg-8 col-md-12 col-12">

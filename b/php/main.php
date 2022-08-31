@@ -3,12 +3,13 @@
 <?php
 session_start();
 $ID = $_SESSION['id'];
-/*$gender = $_SESSION['gender'];
-if ($gender == 'Male') {
-	$g = 'Female';
-} else if ($gender == 'Female') {
-	$g = 'Male';
-}*/
+$gender = $_SESSION['gender'];
+$g = "";
+if ($gender == "Male") {
+	$g = "Female";
+} else if ($gender == "Female") {
+	$g = "Male";
+}
 if ($ID == true) {
 } else {
 	header("Location: index.php");
@@ -58,13 +59,13 @@ if ($ID == true) {
 		<div class="row mt-2">
 			<?php
 			require 'connection.php';
-			$query = "SELECT * FROM userdata WHERE id!=$ID";
+			$query = "SELECT * FROM userdata WHERE id!=$ID and gender = '$g'";
 			$query_run = mysqli_query($conn, $query);
 			$check_pep = mysqli_num_rows($query_run);
 			if ($check_pep > 0) {
 				while ($row = mysqli_fetch_array($query_run)) {
 			?>
-					<div class="col md-6">
+					<!-- <div class="col md-6">
 						<div class="card" id="card-lists">
 							<div class="card-body">
 								<img src="../<?php echo $row['pic']; ?>" class="card-img-top" alt="">
@@ -78,12 +79,12 @@ if ($ID == true) {
 								<button> <a href="package.php"> View More!</a></button>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- <section id="people">
+					<section id="people" class="pad">
 						<div class="pep-container">
 							<div class="pep">
-								<img src="../images/<?php echo $row['pic']; ?>" class="card-img-top" alt="">
+								<img src="../<?php echo $row['pic']; ?>" class="card-img-top" alt="">
 								<div class="des">
 									<h2 class="card-title"> <?php echo $row['name']; ?> </h2><br>
 									<h4 class="card-title"> <?php echo $row['religion']; ?> </h4>
@@ -92,11 +93,11 @@ if ($ID == true) {
 										Age: <?php echo $row['age']; ?><br>
 										Area: <?php echo $row['pdiv']; ?><br>
 									</p>
-									<button> <a href="upgrade.php"> View More!</a></button>
+									<button class="btn btn-danger"> <a style="text-decoration: none; color: #1a1a1a;" href="package.php"> View More!</a></button>
 								</div>
 							</div>
 						</div>
-					</section> -->
+					</section>
 
 			<?php
 				}

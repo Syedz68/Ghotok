@@ -175,6 +175,7 @@ if(isset($_POST['email'])){
             if($st){
                 foreach ($st as $r) {
                     $_SESSION['id'] = $r['id'];
+                    $_SESSION['gender'] = $r['gender'];
                 };   
             }
             header("Location: main.php");
@@ -224,7 +225,6 @@ if(isset($_POST['email'])){
                                     <datalist id="lists">
                                         <option value="Male">
                                         <option value="Female">
-                                        <option value="Others">
                                     </datalist>
                                 </div>
                                 <div class="col-md-6" id="100">

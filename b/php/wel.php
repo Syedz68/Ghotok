@@ -11,6 +11,6 @@ session_start();
 </head>
 <body>
 	<h1>Welcome</h1>
-	<?php echo $_SESSION['id']; ?>
+	<?php echo $_SESSION['gender']; ?>
 </body>
 </html>
